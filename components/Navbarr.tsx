@@ -36,9 +36,6 @@ export function Navbar() {
               <Link href="/dashboard" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium">
                 Dashboard
               </Link>
-              <Link href="/grades" className="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
-                Grades
-              </Link>
             </div>
           </div>
           
