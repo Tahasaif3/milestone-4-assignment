@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { NavBar } from '@/components/navbar'
 
 export default function Home() {
   return (
+    <div> 
+     <NavBar/>
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -20,20 +23,20 @@ export default function Home() {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Welcome to</span>{' '}
-                <span className="block text-indigo-600 xl:inline">NewsEdu</span>
+                <span className="block text-indigo-600 xl:inline">EduTech</span>
               </h1>
               <p className="mt-3 text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto lg:mt-0 lg:text-left">
-                Stay informed about the latest educational news and track your academic progress with ease. NewsEdu is your one-stop platform for all things education.
+                Stay informed about the latest food recipes and track your academic progress with ease. NewsEdu is your one-stop platform for all things education.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <Link href="/news" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                    Browse News
+                  <Link href="/recipe" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                    See Recipes
                   </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Link href="/grades" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
-                    Check Grades
+                  <Link href="/results" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
+                    Check Results
                   </Link>
                 </div>
               </div>
@@ -50,6 +53,7 @@ export default function Home() {
           height={1000}
         />
       </div>
+    </div>
     </div>
   )
 }
